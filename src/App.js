@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, {Component} from 'react'; //Do not knowif this line is necessary and how Component works.
+// import React, {Component} from 'react'; //Do not knowif this line is necessary and how Component works.
 import {Switch, Route} from 'react-router-dom'; //Route, Switch, BrowserRouter.
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductList from './components/ProductList';
