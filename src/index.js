@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {BrowserRouter as Router} from 'react-router-dom'; //Can be placed in App.js, but less mess if placed here. BrowserRouter using alias Router, Router tags in render.
+import {ProductProvider} from './context';
 import reportWebVitals from './reportWebVitals';
 
+// ProductProvider over the Router
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ProductProvider>
+      {/* <React.StrictMode> */}
+        <Router>
+           <App />
+        </Router>
+    {/* </React.StrictMode> */}
+  </ProductProvider>
+  ,
   document.getElementById('root')
 );
 
